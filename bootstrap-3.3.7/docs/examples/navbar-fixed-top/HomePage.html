@@ -1,6 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" height="100%">
   <head>
+  	<style type="text/css">
+		.button {
+		    background-color: #4CAF50; /* Green */
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    cursor: pointer;
+		    height: 300px;
+		    width: 300px;
+		    border-radius: 50%;
+		}
+		.button1{
+			height:490px;
+			width:490px;
+			border-radius: 50%;
+			float: left;
+		}
+		.button2{
+			float: left;
+    		margin: 0 0 5px 5px;
+			border-radius: 50%;
+		}
+		.button3{
+			border-radius: 50%;
+			float: right;
+    		margin: 0 0 5px 5px;
+		}
+		.button4{
+			border-radius: 50%;
+			float: left;
+    		margin: 0 0 5px 5px;
+		}
+		
+	</style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +47,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>General Awareness</title>
+    <title>C.A.R.E Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +69,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body height="100%">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -47,14 +85,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#home" onclick="window.location.href='./HomePage.html'">Home
+          	<li class="active"><a href="#home" onclick="window.location.href='./HomePage.html'">Home
             </a> </li>
-            <li class="active"><a href="#general" onclick="window.location.href='./generalcode.html'">General Awareness
+            <li><a href="#general" onclick="window.location.href='./generalcode.html'">General Awareness
             </a> </li>
             <li><a href="#lgbtq" onclick="window.location.href='./lgbtqcode.html'">LGBTQ+</a></li>
             <li><a href="#rhealth" onclick="window.location.href='./healthcode.html'">Reproductive Health</a></li>
             <li><a href="#bb" onclick="window.location.href='./bbcode.html'">Big Business</a></li>
-            <li><a href="#about" onclick="window.location.href='./contactme.html'">About Us</a></li>              </ul>
+            <li><a href="#about" onclick="window.location.href='./contactme.html'">About Us</a></li>
+             </ul>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -63,41 +102,9 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
-    <div class="container">
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>General Awareness</h1>
-      </div>
-
-    </div> <!-- /container -->
-    <p>
-    <h6 class="subtitles"> Description: </h6>
-    <p class="information"> Awareness- concern about and well-informed interest in a particular situation or development.
-
-    CARE is providing awareness to an audience who want to become informed  about local political issues, human rights violations, and getting involved in political issues that interest them. Some issues that we are bringing more light to are big business violations, LGBTQ+ rights, and reproductive health rights.
-    </p>
-    <br> <br>
-    <p>
-    <h6 class="subtitles"> Ways / Why to Get Involved: </h6>
-    <p class="information"> Insert information here </p>
-    <br> <br>
-    <p>
-    <h6 class="subtitles"> Credible Sources: </h6>
-    <p class="information"> Insert source card buttons here </p>
-    <br> <br>
-
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+	<input type="button" class="button button2" value="LGBTQ+" onclick="window.location.href='./lgbtqcode.html'">
+	<input type="button" class="button button1" value="General Awareness" onclick="window.location.href='./generalcode.html'">
+	<input type="button" class="button button3" value="Big Business" onclick="window.location.href='./bbcode.html'">
+	<input type="button" class="button button4" value="Reproductive Health" onclick="window.location.href='./healthcode.html'">
+ </body>
 </html>
