@@ -2,6 +2,19 @@
 <html lang="en" height="100%">
   <head>
   	<style type="text/css">
+
+  		*:before,
+		*:after {
+		    -webkit-box-sizing: border-box;
+  			-moz-box-sizing: border-box;
+   		    box-sizing: border-box;
+     	}
+ 
+	    body {
+	        text-align: center;
+	        background: #00C8FF;
+	    }
+
 		.button {
 			border: none;
 			color: black;
@@ -36,12 +49,13 @@
     	}
 
 	    #button1:hover {
-	      background: rgba($red, 0);
-	      background-color: #D8F0FF;
-	      font-weight: 900;
-	      letter-spacing: 1px;
 	      opacity: 1;
+	      font-size:19px;
+	    }
 
+	    #button1:hover span {display:none}
+	    #button1:hover:before {
+	    	content: "send help";
 	    }
 
 	    #button2 {
@@ -58,13 +72,14 @@
 	    }
 
 	    #button2:hover {
-	      background: rgba($red, 0);
-	      font-weight: 900;
-	      letter-spacing: 1px;
-	      background-color: #F1CBFF;
 	      opacity: 1;
+	      font-size:19px;
 	    }
 
+	    #button2:hover span {display:none}
+	    #button2:hover:before {
+	    	content: "The Trump Administration poses an immense threat to the LGBTQ+ communities. We must continue our support to ensure respect, rotection and rights for all.";
+	    }
 
 	    #button3 {
 	      background: darken(red, 1.5%);
@@ -80,12 +95,15 @@
 	    }
 
 	    #button3:hover {
-	      background: rgba($red, 0);
-	      font-weight: 900;
-	      letter-spacing: 1px;
-	      background-color: #FFBCC6;
 	      opacity: 1;
+	      font-size:19px;
 	    }
+
+	    #button3:hover span {display:none}
+	    #button3:hover:before {
+	    	content: "send help";
+	    }
+
 
 	    #button4 {
 	      background: darken(red, 1.5%);
@@ -101,11 +119,13 @@
 	    }
 
 	    #button4:hover {
-	      background: rgba($red, 0);
-	      font-weight: 900;
-	      letter-spacing: 1px;
-	      background-color: #FFF0BF;
 	      opacity: 1;
+	      font-size:19px;
+	    }
+
+	    #button4:hover span {display:none}
+	    #button4:hover:before {
+	    	content: "The fight for reproductive health rights has been an ongoing issue in America that currently needs support from you.";
 	    }
 
 	    #button5 {
@@ -122,12 +142,15 @@
 	    }
 
 	    #button5:hover {
-	      background: rgba($red, 0);
-	      font-weight: 900;
-	      letter-spacing: 1px;
 	      opacity: 1;
+	      font-size:18px;
 	    }
 
+	    #button5:hover span {display:none}
+	    #button5:hover:before {
+	    	content: "In the United State women’s rights are growing but women’s right in sports is astoundingly slow. The rest of the world is in the age of Technology but equality for women in the sports might as well be in the stone age.";
+	    }
+	    
 	    .maincontainer {
 	    	height:100%;
 	    	width:100%;
@@ -227,21 +250,22 @@
 
     <div class="maincontainer">
     	<div id="sidecontainer1">
-    		<input type="button" class="button" id="button2" value="LGBTQ+" onclick="window.location.href='./lgbtqcode.html'">
+    		<button class="button" type="button" id="button2" onclick="window.location.href='./lgbtqcode.html'"><span>LGBTQ+</span></button>
     		<div style="line-height:55%;">
     			<br>
 			</div>
-			<input type="button" class="button" id="button5" value="Women in Sports" onclick="window.location.href='./sports.html'">
+			<button class="button" type="button" id="button5" onclick="window.location.href='./sports.html'"><span>Women in Sports</span></button>
+
 		</div>
 		<div id="middlecontainer">
-			<input type="button" id="button1" value="General Awareness" onclick="window.location.href='./generalcode.html'">
+			<button class="button" type="button" id="button1" onclick="window.location.href='./generalcode.html'"><span>General Awareness</span></button>
 		</div>
 		<div id="sidecontainer2">
-			<input type="button" class="button" id="button3" value="Big Business" onclick="window.location.href='./bbcode.html'">
+			<button class="button" type="button" id="button3" onclick="window.location.href='./bbcode.html'"><span>Big Business</span></button>
 			<div style="line-height:55%;">
     			<br>
 			</div>
-			<input type="button" class="button" id="button4" value="Reproductive Health" onclick="window.location.href='./healthcode.html'">
+			<button class="button" type="button" id="button4" onclick="window.location.href='./healthcode.html'"><span>Reproductive Health</span></button>
 		</div>
 	</div>
 
