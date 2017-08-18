@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+          * {box-sizing:border-box}
+      body {font-family: Verdana,sans-serif;}
+      .mySlides {display:none}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 10000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.5s ease;
+        visibility: hidden;
+      }
+
+      .active {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 5.0s;
+        animation-name: fade;
+        animation-duration: 5.0s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: 1}
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: 1}
+        to {opacity: 1}
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+    </style>
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../bootstrap-3.3.7/docs/favicon.ico">
+
+    <title>Reproductive Health Awareness</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap-3.3.7/docs/examples/navbar-fixed-top/cssmain.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">C.A.R.E</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+             <li><a href="#general" onclick="window.location.href='./generalcode.html'">General Awareness
+            </a> </li>
+            <li><a href="#lgbtq" onclick="window.location.href='./lgbtqcode.html'">LGBTQ+</a></li>
+            <li class="active"><a href="#rhealth" onclick="window.location.href='./healthcode.html'">Reproductive Health</a></li>
+            <li><a href="#bb" onclick="window.location.href='./bbcode.html'">Big Business</a></li>
+            <li><a href="#about" onclick="window.location.href='./contactme.html'">About Us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Reproductive Awareness</h1>
+      </div>
+
+    </div> <!-- /container -->
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 20</div>
+      <img src="./Women's_March_Images/women_dump_trump.JPG" style="width:100%">
+      <div class="text">Women's March NYC</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 20</div>
+      <img src="./Gay_Pride_Images_NYC/lgbtq_matters.JPG" style="width:100%">
+      <div class="text">NYC 2016</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 20</div>
+      <img src="./Human_Rights_March_Images/response.JPG" style="width:100%">
+      <div class="text">NYC 2016</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 20</div>
+      <img src="./Human_Rights_March_Images/injust.JPG" style="width:100%">
+      <div class="text">March in the 1960's</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 20</div>
+      <img src="./Human_Rights_March_Images/human_rights.jpg" style="width:100%">
+      <div class="text">Human Rights March in the 90's</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 20</div>
+      <img src="./Human_Rights_March_Images/human_rights_march.jpg" style="width:100%">
+      <div class="text">Human Rights March</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 20</div>
+      <img src="./Human_Rights_March_Images/injustice.jpg" style="width:100%">
+      <div class="text">Injustice in the System</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 20</div>
+      <img src="./Human_Rights_March_Images/no_trump.jpg" style="width:100%">
+      <div class="text">Anti-Trump March</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 20</div>
+      <img src="./Gay_Pride_Images_NYC/pride_parade.jpg" style="width:100%">
+      <div class="text">The Pride Parade in NYC</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">10 / 20</div>
+      <img src="./Gay_Pride_Images_NYC/stonewall_oppression.jpg" style="width:100%">
+      <div class="text">Stonewall March in the 1970's NYC</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">11 / 20</div>
+      <img src="./Gay_Pride_Images_NYC/the_march.jpg" style="width:100%">
+      <div class="text">Gay PrideMarch NYC</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">12 / 20</div>
+      <img src="./Gay_Pride_Images_NYC/baloons.jpg.jpg" style="width:100%">
+      <div class="text">Pride Parade</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">13 / 20</div>
+      <img src="./Women's_March_Images/dc_women_march.jpg" style="width:100%">
+      <div class="text">Women's March in DC 2017</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">14 / 20</div>
+      <img src="./Women's_March_Images/diverse_women_march.jpg" style="width:100%">
+      <div class="text">Women's March in NYC 2017</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">15 / 20</div>
+      <img src="./Women's_March_Images/kids_women_march.jpg" style="width:100%">
+      <div class="text">Women's March 2017</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">16 / 20</div>
+      <img src="./Women's_March_Images/teen_women.jpg" style="width:100%">
+      <div class="text">Women's March in NYC 2017</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">17 / 20</div>
+      <img src="./Women's_March_Images/teens_women_march.jpg" style="width:100%">
+      <div class="text">Women's March in NYC 2017</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">18 / 20</div>
+      <img src="./Women's_March_Images/unity_women_march.jpg" style="width:100%">
+      <div class="text">Women's March in DC 2017</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">19 / 20</div>
+      <img src="./Women's_March_Images/women_march_dc.jpg" style="width:100%">
+      <div class="text">Women's March in DC 2017</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">20 / 20</div>
+      <img src="./Human_Rights_March_Images/patriotism.jpg" style="width:100%">
+      <div class="text">March in NYC</div>
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        console.log(slides.length);
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+    <p>
+    <h6 class="subtitles"> Description: </h6>
+    <p class="information"> Reproductive Health has become a popular topic surrounding human rights in the past couple of years. With the possible loss of Planned Parenthood and the banishment of abortion in the future, women nationwide feel that their reproductive rights have been violated. In addition, if we lose funding to Planned Parenthood, numerous amounts of women will be neglected access to birth control, feminine hygiene products, and sexual education. Women should not have their own personal choices on their bodies to be decided on by conservative cis-white men who have no experience of "walking in a woman's shoes" whatsoever. <br> <br> The links and events provided below bring forth the option to voice your opinion on reproductive health in a positive way. The contact information is given in the website's link below. CARE hopes that you will help reproductive health rights and issues gain more attention and help women gain access to Planned Parenthood's vital necessities for them nationwide through our helpful services. </p>
+    <br> <br>
+    <p>
+    <h6 class="subtitles"> Ways to Get Involved: </h6>
+    <p class="information">
+      There are many things that can be done in order to support reproductive healthcare reform an dbring about awareness. <br> <b> How does one "Take Action"? </b> Attend an event supporting Planned Parenthood. Become a PP Defender: defenders are a core group of supporters who have said they'll give their time to defend Planned Parenthood, the health services they provide, and the people who rely on them. Change your profile picture to stay #IStandwithPP. Donate money to the organization; Participate in marches! <br> <b> How does one "Join or Organize A Protest"? </b>
+      <ul>
+      <li> Organize a core group. </li>
+      <li>Pick a time and place.</li>
+      <li>Round up volunteers</li>
+      <li>Make it known: put the word out through emails, posters and flyers, local media, word of mouth and any other way you can.</li>
+      <li>Organize speakers.</li>
+      <li>Think up a catchy chant.</li>
+      <li>Check for hazards or dangers.</li>
+      <li>Notify the authorities.</li>
+      <li>Organize permits.</li>
+      <li>Get equipped.</li>
+      <li>Check the weather.</li>
+      <li>Hand out information.</li>
+      <li>Clean up your mess.</li>
+    </ul>
+      <p class="information">
+        <br> <b> How does one "Fight for human rights in your community"?</b>
+      <ul>
+      <li>Join or start a local group.</li>
+      <li>Meet your politicians</li>
+      <li>Organize a Stunt </li>
+    </p>
+    <br> <br>
+    <p>
+    <h6 class="subtitles"> Credible Sources: </h6>
+    <p class="information"> Insert source card buttons here </p>
+    <br> <br>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
