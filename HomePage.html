@@ -35,7 +35,7 @@
 	      width:500px;
 	      border-radius: 50%;
 	      font-size: 40px;
-	      opacity: .95;
+	      opacity: 1;
 	      border: none;
 		  color: black;
    		  text-align: center;
@@ -46,18 +46,10 @@
 	      margin-left:auto;
 	      margin-top:30px;
 	      margin-bottom:30px;
+	      background-image: url('logo.png');
+	      background-size: 100%, 100%;
     	}
-
-	    #button1:hover {
-	      opacity: 1;
-	      font-size:19px;
-	    }
-
-	    #button1:hover span {display:none}
-	    #button1:hover:before {
-	    	content: "send help";
-	    }
-
+    	
 	    #button2 {
 	      background: darken(red, 1.5%);
 	      background-color: #F1CBFF;
@@ -203,7 +195,8 @@
     <style>
     ul.nav li.active a {
       background-color: #FFFDF4!important;
-}
+	}
+
     </style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -216,7 +209,7 @@
     <![endif]-->
   </head>
 
-  <body height="100%" style="background-image:url('./simba.GIF')">
+  <body style="background-image:url('./simba.gif')">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -262,7 +255,7 @@
 
 		</div>
 		<div id="middlecontainer">
-			<button class="button" type="button" id="button1" onclick="window.location.href='./generalcode.html'"><span>General Awareness</span></button>
+			<button class="button" type="button" id="button1" onclick="window.location.href='./generalcode.html'""></button>
 		</div>
 		<div id="sidecontainer2">
 			<button class="button" type="button" id="button3" onclick="window.location.href='./bbcode.html'"><span>Big Business</span></button>
