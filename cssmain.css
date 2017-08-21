@@ -27,3 +27,20 @@ a:hover {
 	color:#FFFDF8;
 }
 
+ul {
+	font-family: "Arial";
+	font-size: 18px;
+	text-align:justify;
+}
+
+ol {
+	font-family: "Arial";
+	font-size: 18px;
+	text-align:justify;
+}
+
+li {
+	font-family: "Arial";
+	font-size: 18px;
+	text-align:justify;
+}
