@@ -172,6 +172,200 @@
       float:left;
     }
 
+    * {box-sizing:border-box}
+    .mySlides {display:none}
+
+    /* Slideshow container */
+
+    .sources {
+      background-color: #FFA2A0;
+      width:100%;
+      margin-bottom: 40px;
+      padding-left:20px;
+      padding-right:20px;
+      color:#B73548;
+      overflow: auto;
+    }
+
+    .slideshow-container {
+      position: relative;
+      margin: auto;
+      background-color: #FFA2A0;
+      width:100%;
+      margin-bottom: 40px;
+      padding-left:20px;
+      padding-right:20px;
+      overflow:hidden;
+      color:#B73548;
+    }
+
+    /* Caption text */
+    .text {
+      color:white;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color:#B73548;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.5s ease;
+      visibility: hidden;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 10.5s;
+      animation-name: fade;
+      animation-duration: 10.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: 1}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: 1}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+
+      .slideshowimages {
+        width:40%;
+        height:40%;
+
+    }
+
+    @media only screen and (max-width: 600px) and (min-width: 100px) {
+      #container {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      footer {
+        display: none;
+      }
+      .link-image-rectangle {
+        width:150px;
+        height:65px;
+        border-right:15px;
+        float:left;
+        margin:15px;
+      }
+      .informationsources {
+        text-align:left;
+      }
+
+      .jumbotron {
+        align-items: center;     /* Align the inner div vertically */
+        justify-content: center;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+
+      .jumbocontainer {
+        height:100vh;
+        width:98.78vw;
+        background-image: url('./bb.jpg');
+        align-items: center;     /* Align the inner div vertically */
+        justify-content: center;
+        overflow:auto;
+      }
+    }
+
+	.column {
+		float: left;
+		width: 25%;
+		margin-bottom: 16px;
+		padding: 0 5px;
+	}
+	
+
+	/* Add some shadows to create a card effect */
+	.card {
+	    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	/* Some left and right padding inside the container */
+	.biocontainer {
+	    padding: 0 16px;
+	}
+
+	/* Clear floats */
+	.container::after, .row::after {
+	    content: "";
+	    clear: both;
+	    display: table;
+	    overflow
+	}
+
+	.button {
+	    border: none;
+	    outline: 0;
+	    display: inline-block;
+	    padding: 8px;
+	    color:white;
+	    background-color:#FF908E;
+	    text-align: center;
+	    cursor: pointer;
+	    width: 30%;
+	}
+
+	.button:hover {
+	    color:white;
+	    background-color:#FF908E;
+
+	}
+
+	.bioparagraph {
+		font-family:Arial;
+		font-size: 18px;
+		text-align:left;
+	}
+
+	@media only screen and (max-width: 600px) and (min-width: 0px) {
+	    .column {
+	        width: 100%;
+	        display: block;
+	    }
+	    .bioparagraph {
+			font-family:Arial;
+			font-size: 18px;
+			text-align:left;
+		}
+	}
+
+
+
+
+    
     </style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -260,41 +454,194 @@
         </div>
         <h5 class="subtitles"> FOUNDERS: </h5>
         <hr>
-            <div id="lea">
-            <h6 class="subtitles"> Lea Boyadjian </h6>
-              <p style="font-family:Arial; font-size: 18px;text-align:justify">
-              I am a rising Senior at Bard High School Early College in Lower East Side. I was born in Lebanon, but I’m of Armenian descent and currently live in Queens. After participating in Girls Who Code Summer Immersion Program, I thoroughly enjoy web design and web development. I aspire to major in Computer Science in college and possibly philosophy as a minor. I love mediterranean food, russian literatures, makeup and techonology. I hope that one day, in the near future, I will own a turtle. </p>
-            </div>
-            <div id="faith">
-            <h6 class="subtitles"> Faith Duggan </h6>
-              <p style="font-family:Arial; font-size: 18px;text-align:justify">
-              As of 2017, I am 16 year-old student at The Nightingale-Bamford School. I have participated in the New York Times summer Academy and Girls Who Code Summer Immersion program. I am interested in computer science, sports, peace and quiet, and traveling. I don’t often get traveling and peace and quiet at the same time though. My loud Irish and Dominican family make sure that never happens. </p>
-            </div>
-            <div id="lina">
-              <h6 class="subtitles"> Lina Montes </h6>
-              <p style="font-family:Arial; font-size: 18px;text-align:justify">
-              I am a rising Senior at Yonkers Middle High School. After participating in the Girls Who Code Summer Immersion Program, I have developed a love for Computer Science. I am a Colombian woman, a daughter of immigrant parents, an athlete, a dog owner, and a coder. Being raised by Colombian immigrants has shaped me into a compassionate and empathetic human being. I have many varied interests, some from the American culture, and others from the Colombian culture. Growing up so close to NYC has taught me much about being respectful of different cultures. However, growing up in Westchester has exposed me to the ignorance of others that is present outside of a diverse city. I can not be who I am without being all of those things. </p>
-            </div>
-            <div id="savannah">
-                <h6 class="subtitles"> Savannah Yusko </h6>
-                <p style="font-family:Arial; font-size: 18px;text-align:justify">
-                I am currently sixteen years old and I am a rising junior at New Dorp High School in Staten Island, New York. I joined the Girls Who Code Summer Immersion Program because I am passionate about learning more about coding and would like to make a difference in the world through web development.  I also love dogs, hanging out with friends, and exploring new cities. </p>
-            </div>
+        <img src="group-pic.jpeg" alt="Group" style="width:70%; height:70%; padding-left:20px;padding-right:20px;">
+        <br>
+        <br>
+        <hr>
+        <div class="row">
+		  <div class="column">
+		    <div class="card">
+		      <img src="leapic.jpeg" alt="Lea" style="width:100%">
+		      <div class="biocontainer">
+		        <h6 class="subtitles"><b>Lea Boyadjian</b></h6>
+		        <p class="bioparagraph">
+              	I am a rising Senior at Bard High School Early College in Lower East Side. I was born in Lebanon, but I’m of Armenian descent and currently live in Queens. My name is originally spelled as Leia but I prefer Lea. After participating in Girls Who Code Summer Immersion Program, I thoroughly enjoy web design and web development. I aspire to major in Computer Science in college and possibly philosophy as a minor. I love mediterranean food, russian literatures, makeup and techonology. I hope that one day, in the near future, I will own a turtle. </p>
+		        <p><button class="button"><a href="mailto:lb5263@bhsec.bard.edu">Email Me</a></button></p><br>
+		        <p><button class="button"><a href="https://www.linkedin.com/in/leia-boyadjian/">Linked-In</a></button></p><br>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="faithpic.jpeg" alt="Faith" style="width:100%">
+		      <div class="biocontainer">
+		        <h6 class="subtitles"><b> Faith Duggan</b> </h6>
+              	<p class="bioparagraph">
+              	As of 2017, I am 16 year-old student at The Nightingale-Bamford School. I have participated in the New York Times Summer Academy and Girls Who Code Summer Immersion program. I am interested in computer science, sports, peace and quiet, and traveling. I don’t often get traveling and peace and quiet at the same time though. My loud Irish and Dominican family makes sure that never happens. My school has gifted me with an amazing education, because of this I love physics, astronomy, and math (but NOT Geometry).</p>
+		        <p><button class="button"><a href="mailto:ninjafaith24@gmail.com">Email Me</a></button></p><br>
+		        <p><button class="button"><a href="https://www.linkedin.com/in/faith-d-628284146/">Linked-In</a></button></p><br>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="linapic.jpeg" alt="Lina" style="width:100%">
+		      <div class="biocontainer">
+		        <h6 class="subtitles"><b> Lina Montes</b> </h6>
+              	<p class="bioparagraph">
+              	I am a rising Senior at Yonkers Middle High School. After participating in the Girls Who Code Summer Immersion Program, I have developed a love for Computer Science. I am a Colombian woman, a daughter of immigrant parents, an athlete, a dog owner, and a coder. Being raised by Colombian immigrants has shaped me into a compassionate and empathetic human being. Growing up so close to NYC has taught me much about being respectful of other cultures. I can not be who I am without being all of those things. </p>
+		        <p><button class="button"><a href="mailto:monteslina54@gmail.com">Email Me</a></button></p><br>
+		        <p><button class="button"><a href="https://www.linkedin.com/in/linamontes10/">Linked-In</a></button></p><br> 
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="savannahpic.jpEg" alt="Savannah" style="width:100%">
+		      <div class="biocontainer">
+		        <h6 class="subtitles"><b> Savannah Yusko </b></h6>
+                <p class="bioparagraph">
+                I am currently sixteen years old and I am a rising junior at New Dorp High School in Staten Island, New York. I joined the Girls Who Code Summer Immersion Program because I am passionate about learning more about coding and would like to make a difference in the world through web development. I also love dogs (I hope to adopt a Golden Retriever when I'm older), hanging out with friends, and exploring new cities. Some of my favorite cities that I have explored include Washington D.C., New York City, Princeton, and Philadephia.</p>
+		        <p><button class="button"><a href="mailto:savannachyusko29@gmail.com">Email Me</a></button></p><br>
+		        <p><button class="button"><a href="https://www.linkedin.com/in/savannah-yusko-a02284146/">Linked-In</a></button></p> <br>
+		      </div>
+		    </div>
+		  </div>
+		</div>
         <br>
       </div>
+      <div class="slideshow-container">
+        <div style="line-height:70%;">
+          <br>
+        </div>
+        <h5 class="subtitles"> SLIDESHOW: </h5>
+        <hr>
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 15</div>
+            <img src="IMG_3794.JPG" class="slideshowimages">
+            <div class="text"><b>Facebook Headquarters NYC</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 15</div>
+            <img src="dorcy.jpg" class="slideshowimages">
+            <div class="text"><b>The Girls</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 15</div>
+            <img src="us.jpg" class="slideshowimages">
+            <div class="text"><b>Celebrating Clarisse's Birthday!</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 15</div>
+            <img src="IMG_0071.JPG" class="slideshowimages">
+            <div class="text"><b>Group picture with panel at Adobe</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 15</div>
+            <img src="IMG_0126.JPG" class="slideshowimages">
+            <div class="text"><b>Victory! With Josephine</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 15</div>
+            <img src="IMG_0130.JPG" class="slideshowimages">
+            <div class="text"><b>Noha and the girls</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 15</div>
+            <img src="IMG_0131.JPG" class="slideshowimages">
+            <div class="text"><b>Jumping with each other</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 15</div>
+            <img src="image_11.JPG" class="slideshowimages">
+            <div class="text"><b>"Humans are robots."</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 15</div>
+            <img src="IMG_0142.JPG" class="slideshowimages">
+            <div class="text"><b>Practicing the Robot Maze</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 15</div>
+            <img src="IMG_0158.JPG" class="slideshowimages">
+            <div class="text"><b>Lina cheesin</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">11 / 15</div>
+            <img src="IMG_1833.jpg" class="slideshowimages">
+            <div class="text"><b>Shreya: A Girl on a Mission</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">12 / 15</div>
+            <img src="IMG_0166.JPG" class="slideshowimages">
+            <div class="text"><b>Entering the Software Engineering Panel at Facebook</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">13 / 15</div>
+            <img src="IMG_1234.jpg" class="slideshowimages">
+            <div class="text"><b>Working Hard or Hardly Working ?</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">14 / 15</div>
+            <img src="IMG_1581.jpg" class="slideshowimages">
+            <div class="text"><b>Josephine, Lea, and Lina</b></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">15 / 15</div>
+            <img src="IMG_0160.JPG" class="slideshowimages">
+            <div class="text"><b>Girls Who Code Adobe Class of 2017</div>
+          </div>
+          <br>
+
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
     </div>
     <hr>
     <footer>
     <div class="footercontainer">
       <div id="footercontainerleft">
-        <img src="Care.PNG" id="care">
+        <img src="./Care.PNG" id="care">
       </div>
       <div id="footercontainerright">
         <div class="smallpics">
-          <img src="GWC_.PNG" class="footersmall1">
+          <img src="./GWC_.png" class="footersmall1">
         </div>
         <div class="smallpics">
-          <img src="Adobe.PNG" class="footersmall2">
+          <img src="./Adobe.png" class="footersmall2">
         </div>
       </div>
     </div>
@@ -306,6 +653,27 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex> slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+    </script>
     <script>window.jQuery || document.write('<script src="./bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="./bootstrap-3.3.7/docs/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
