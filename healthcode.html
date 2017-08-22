@@ -175,13 +175,7 @@
       footer {
         display: none;
       }
-      .link-image-rectangle {
-        width:150px;
-        height:65px;
-        border-right:15px;
-        float:left;
-        margin:15px;
-      }
+
       .informationsources {
         text-align:left;
       }
@@ -207,7 +201,28 @@
       }
 
       .information {
-        text-align: left;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow:auto;
+      }
+
+      .link-image-square {
+        width:200px;
+        height:200px;
+        border-right:0px;
+        float:none;
+        margin:0px;
+        vertical-align: middle;
+      }
+
+      .link-image-rectangle {
+        width:150px;
+        height:65px;
+        border-right:0px;
+        float:none;
+        margin:0px;
+        vertical-align: middle;
       }
 
     }
@@ -325,7 +340,7 @@
         </div>
         <h5 class="subtitles"> Credible Sources: </h5>
         <hr>
-        <p style="text-align:center;">
+        <div class = "information">
           <a class="link" href="http://www.riaclu.org/know-your-rights/pamphlets/know-your-rights-protests-and-demonstrations"> <img src="aclu.jpg" class="link-image-square"><br> The ACLU </a>
 
           <a class="link" href="https://www.amnesty.org/en/latest/campaigns/2016/01/3-ways-to-fight-for-human-rights-in-your-community/"><img src="amnesty.jpg" class="link-image-square"><br>Amnesty</a>
@@ -334,7 +349,7 @@
 
           <a class="link" href="https://www.istandwithpp.org/take-action?_ga=2.179903844.1395753771.1502722663-1288187775.1502722663"><img src="pp.png" class="link-image-square"><br>Planned Parenthood</a><br>
 
-        </p>
+        </div>
         <br>
       </div>
       <div class="mapcontainer">

@@ -176,13 +176,7 @@
       footer {
         display: none;
       }
-      .link-image-rectangle {
-        width:150px;
-        height:65px;
-        border-right:15px;
-        float:left;
-        margin:15px;
-      }
+
       .informationsources {
         text-align:left;
       }
@@ -208,7 +202,28 @@
       }
 
       .information {
-        text-align: left;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow:auto;
+      }
+
+      .link-image-square {
+        width:200px;
+        height:200px;
+        border-right:0px;
+        float:none;
+        margin:0px;
+        vertical-align: middle;
+      }
+
+      .link-image-rectangle {
+        width:150px;
+        height:65px;
+        border-right:0px;
+        float:none;
+        margin:0px;
+        vertical-align: middle;
       }
 
     }
@@ -302,6 +317,7 @@
               </ul><br>
             <li class= "informationinvolved"><b>Support and watch women’s professional leagues. </b></li>
           </ol>
+          <div class="information">
           <a class ="link" href="https://www.womeninsport.org/wp-content/uploads/2016/07/Womens-Sport-Week-2016-Activation-Toolkit.pdf?938151"> <img src="wis.jpg" class="link-image-square"><br>Women in Sports</a>
 
           <a class ="link" href="http://www.elle.com/culture/career-politics/a29253/5-things-you-can-do-to-make-sure-womens-sports-still-gets-the-attention-it-deserves-after-the-world-cup/"> <img src="elle.jpg" class="link-image-square"><br>Keep Women's Sports Popular</a>
@@ -309,6 +325,7 @@
           <a class ="link" href="https://www.womenssportsfoundation.org/athletes/for-athletes/get-involved/"> <img src="wsf.jpg" class="link-image-square"><br>For Athletes</a>
 
           <a class ="link" href="http://www.bbc.com/sport/get-inspired/40273488"> <img src="bbc.png" class="link-image-square"><br>Get inspired</a> <br>
+          </div>
 
       </div>
 
@@ -318,7 +335,7 @@
         </div>
         <h5 class="subtitles"> Credible Sources: </h5>
         <hr>
-        <p style="text-align:center;">
+        <div class="information">
 
           <a class="link" href="https://www.theodysseyonline.com/unfair-difference-mens-womens-sports-team"> <img src="od.jpg" class="link-image-rectangle"><br> The Odyssey Online</a>
 
@@ -332,7 +349,7 @@
 
           <a class="link" href="https://www.womenssportsfoundation.org/"><img src="wsf.jpg" class="link-image-square"><br>Women's Sports Foundation</a><br>
 
-        </p>
+        </div>
         <br>
       </div>
       <div class="mapcontainer">

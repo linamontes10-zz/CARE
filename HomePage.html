@@ -169,21 +169,47 @@
 	    }
 
 	    @media only screen and (max-width: 600px) and (min-width: 100px) {
-     		#sidecontainer1 {
-        		float:none;
-        	}
-        	#sidecontainer2 {
-        		float:none;
-      		}
-      		#middlecontainer {
-        		float:none;
-        		height:100%;
-	    		width:25%;
 
-      		}
       		#button1 {
       			height: 280px;
 				width: 280px;
+      		}
+
+      		.maincontainer {
+		        display:flex;
+		        flex-direction: column;
+		        justify-content: center;
+		        overflow:auto;
+		    }
+
+		    #sidecontainer1 {
+		        display:flex;
+		        flex-direction: column;
+		        justify-content: center;
+		        overflow:auto;
+		    	float:none;
+        		height:100%;
+	    		width:100%;
+		    }
+
+		    #sidecontainer2 {
+		        display:flex;
+		        flex-direction: column;
+		        justify-content: center;
+		        overflow:auto;
+		    	float:none;
+        		height:100%;
+	    		width:100%;
+	    	}
+
+		    #middlecontainer {
+		    	display:flex;
+		        flex-direction: column;
+		        justify-content: center;
+		        overflow:auto;
+		    	float:none;
+        		height:100%;
+	    		width:100%;
       		}
     	}
 
