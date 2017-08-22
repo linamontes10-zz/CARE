@@ -19,6 +19,12 @@ body {
 	text-align: justify;
 	font-family: "Arial";
 }
+
+.informationinvolved {
+	font-family:Arial;
+	font-size: 18px;
+	text-align:justify;
+}
 a {
 	color:#FFFDF4;
 }
