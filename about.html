@@ -184,6 +184,7 @@
       padding-left:20px;
       padding-right:20px;
       color:#B73548;
+      overflow: auto;
     }
 
     .slideshow-container {
@@ -257,13 +258,114 @@
       .text {font-size: 11px}
     }
 
-    .slideshowimages {
-      width:40%;
-      height:40%;
+      .slideshowimages {
+        width:40%;
+        height:40%;
 
     }
 
+    @media only screen and (max-width: 600px) and (min-width: 100px) {
+      #container {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      footer {
+        display: none;
+      }
+      .link-image-rectangle {
+        width:150px;
+        height:65px;
+        border-right:15px;
+        float:left;
+        margin:15px;
+      }
+      .informationsources {
+        text-align:left;
+      }
 
+      .jumbotron {
+        align-items: center;     /* Align the inner div vertically */
+        justify-content: center;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+
+      .jumbocontainer {
+        height:100vh;
+        width:98.78vw;
+        background-image: url('./bb.jpg');
+        align-items: center;     /* Align the inner div vertically */
+        justify-content: center;
+        overflow:auto;
+      }
+    }
+
+	.column {
+		float: left;
+		width: 25%;
+		margin-bottom: 16px;
+		padding: 0 5px;
+	}
+	
+
+	/* Add some shadows to create a card effect */
+	.card {
+	    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	/* Some left and right padding inside the container */
+	.biocontainer {
+	    padding: 0 16px;
+	}
+
+	/* Clear floats */
+	.container::after, .row::after {
+	    content: "";
+	    clear: both;
+	    display: table;
+	    overflow
+	}
+
+	.button {
+	    border: none;
+	    outline: 0;
+	    display: inline-block;
+	    padding: 8px;
+	    color:white;
+	    background-color:#FF908E;
+	    text-align: center;
+	    cursor: pointer;
+	    width: 30%;
+	}
+
+	.button:hover {
+	    color:white;
+	    background-color:#FF908E;
+
+	}
+
+	.bioparagraph {
+		font-family:Arial;
+		font-size: 18px;
+		text-align:left;
+	}
+
+	@media only screen and (max-width: 600px) and (min-width: 0px) {
+	    .column {
+	        width: 100%;
+	        display: block;
+	    }
+	    .bioparagraph {
+			font-family:Arial;
+			font-size: 18px;
+			text-align:left;
+		}
+	}
+
+
+
+
+    
     </style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -352,26 +454,63 @@
         </div>
         <h5 class="subtitles"> FOUNDERS: </h5>
         <hr>
-            <div id="lea">
-            <h6 class="subtitles"> Lea Boyadjian </h6>
-              <p style="font-family:Arial; font-size: 18px;text-align:justify">
-              I am a rising Senior at Bard High School Early College in Lower East Side. I was born in Lebanon, but I’m of Armenian descent and currently live in Queens. After participating in Girls Who Code Summer Immersion Program, I thoroughly enjoy web design and web development. I aspire to major in Computer Science in college and possibly philosophy as a minor. I love mediterranean food, russian literatures, makeup and techonology. I hope that one day, in the near future, I will own a turtle. </p>
-            </div>
-            <div id="faith">
-            <h6 class="subtitles"> Faith Duggan </h6>
-              <p style="font-family:Arial; font-size: 18px;text-align:justify">
-              As of 2017, I am 16 year-old student at The Nightingale-Bamford School. I have participated in the New York Times summer Academy and Girls Who Code Summer Immersion program. I am interested in computer science, sports, peace and quiet, and traveling. I don’t often get traveling and peace and quiet at the same time though. My loud Irish and Dominican family make sure that never happens. </p>
-            </div>
-            <div id="lina">
-              <h6 class="subtitles"> Lina Montes </h6>
-              <p style="font-family:Arial; font-size: 18px;text-align:justify">
-              I am a rising Senior at Yonkers Middle High School. After participating in the Girls Who Code Summer Immersion Program, I have developed a love for Computer Science. I am a Colombian woman, a daughter of immigrant parents, an athlete, a dog owner, and a coder. Being raised by Colombian immigrants has shaped me into a compassionate and empathetic human being. I have many varied interests, some from the American culture, and others from the Colombian culture. Growing up so close to NYC has taught me much about being respectful of different cultures. However, growing up in Westchester has exposed me to the ignorance of others that is present outside of a diverse city. I can not be who I am without being all of those things. </p>
-            </div>
-            <div id="savannah">
-                <h6 class="subtitles"> Savannah Yusko </h6>
-                <p style="font-family:Arial; font-size: 18px;text-align:justify">
-                I am currently sixteen years old and I am a rising junior at New Dorp High School in Staten Island, New York. I joined the Girls Who Code Summer Immersion Program because I am passionate about learning more about coding and would like to make a difference in the world through web development.  I also love dogs, hanging out with friends, and exploring new cities. </p>
-            </div>
+        <img src="group-pic.jpeg" alt="Group" style="width:70%; height:70%; padding-left:20px;padding-right:20px;">
+        <br>
+        <br>
+        <hr>
+        <div class="row">
+		  <div class="column">
+		    <div class="card">
+		      <img src="leapic.jpeg" alt="Lea" style="width:100%">
+		      <div class="biocontainer">
+		        <h6 class="subtitles"><b>Lea Boyadjian</b></h6>
+		        <p class="bioparagraph">
+              	I am a rising Senior at Bard High School Early College in Lower East Side. I was born in Lebanon, but I’m of Armenian descent and currently live in Queens. My name is originally spelled as Leia but I prefer Lea. After participating in Girls Who Code Summer Immersion Program, I thoroughly enjoy web design and web development. I aspire to major in Computer Science in college and possibly philosophy as a minor. I love mediterranean food, russian literatures, makeup and techonology. I hope that one day, in the near future, I will own a turtle. </p>
+		        <p><button class="button"><a href="mailto:lb5263@bhsec.bard.edu">Email Me</a></button></p><br>
+		        <p><button class="button"><a href="https://www.linkedin.com/in/leia-boyadjian/">Linked-In</a></button></p><br>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="faithpic.jpeg" alt="Faith" style="width:100%">
+		      <div class="biocontainer">
+		        <h6 class="subtitles"><b> Faith Duggan</b> </h6>
+              	<p class="bioparagraph">
+              	As of 2017, I am 16 year-old student at The Nightingale-Bamford School. I have participated in the New York Times Summer Academy and Girls Who Code Summer Immersion program. I am interested in computer science, sports, peace and quiet, and traveling. I don’t often get traveling and peace and quiet at the same time though. My loud Irish and Dominican family makes sure that never happens. My school has gifted me with an amazing education, because of this I love physics, astronomy, and math (but NOT Geometry).</p>
+		        <p><button class="button"><a href="mailto:ninjafaith24@gmail.com">Email Me</a></button></p><br>
+		        <p><button class="button"><a href="https://www.linkedin.com/in/faith-d-628284146/">Linked-In</a></button></p><br>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="linapic.jpeg" alt="Lina" style="width:100%">
+		      <div class="biocontainer">
+		        <h6 class="subtitles"><b> Lina Montes</b> </h6>
+              	<p class="bioparagraph">
+              	I am a rising Senior at Yonkers Middle High School. After participating in the Girls Who Code Summer Immersion Program, I have developed a love for Computer Science. I am a Colombian woman, a daughter of immigrant parents, an athlete, a dog owner, and a coder. Being raised by Colombian immigrants has shaped me into a compassionate and empathetic human being. Growing up so close to NYC has taught me much about being respectful of other cultures. I can not be who I am without being all of those things. </p>
+		        <p><button class="button"><a href="mailto:monteslina54@gmail.com">Email Me</a></button></p><br>
+		        <p><button class="button"><a href="https://www.linkedin.com/in/linamontes10/">Linked-In</a></button></p><br> 
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="savannahpic.jpEg" alt="Savannah" style="width:100%">
+		      <div class="biocontainer">
+		        <h6 class="subtitles"><b> Savannah Yusko </b></h6>
+                <p class="bioparagraph">
+                I am currently sixteen years old and I am a rising junior at New Dorp High School in Staten Island, New York. I joined the Girls Who Code Summer Immersion Program because I am passionate about learning more about coding and would like to make a difference in the world through web development. I also love dogs (I hope to adopt a Golden Retriever when I'm older), hanging out with friends, and exploring new cities. Some of my favorite cities that I have explored include Washington D.C., New York City, Princeton, and Philadephia.</p>
+		        <p><button class="button"><a href="mailto:savannachyusko29@gmail.com">Email Me</a></button></p><br>
+		        <p><button class="button"><a href="https://www.linkedin.com/in/savannah-yusko-a02284146/">Linked-In</a></button></p> <br>
+		      </div>
+		    </div>
+		  </div>
+		</div>
         <br>
       </div>
       <div class="slideshow-container">
@@ -389,7 +528,7 @@
           <div class="mySlides fade">
             <div class="numbertext">2 / 15</div>
             <img src="dorcy.jpg" class="slideshowimages">
-            <div class="text"><b>The girls with Dorcie</b></div>
+            <div class="text"><b>The Girls</b></div>
           </div>
 
           <div class="mySlides fade">
