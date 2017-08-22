@@ -183,13 +183,7 @@
       footer {
         display: none;
       }
-      .link-image-rectangle {
-        width:150px;
-        height:65px;
-        border-right:15px;
-        float:left;
-        margin:15px;
-      }
+
       .informationsources {
         text-align:left;
       }
@@ -210,6 +204,34 @@
         overflow:auto;
       }
 
+      .informationinvolved {
+        text-align: left;
+      }
+
+      .information {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow:auto;
+      }
+
+      .link-image-square {
+        width:200px;
+        height:200px;
+        border-right:0px;
+        float:none;
+        margin:0px;
+        vertical-align: middle;
+      }
+
+      .link-image-rectangle {
+        width:150px;
+        height:65px;
+        border-right:0px;
+        float:none;
+        margin:0px;
+        vertical-align: middle;
+      }
 
     }
 
@@ -291,7 +313,7 @@
         </div>
         <h5 class="subtitles"> Ways to Get Involved: </h5>
         <hr>
-        <p style="font-family:Arial; font-size: 18px;" class="informationsources">
+        <p class="informationinvolved">
         There are many ways to get involved to invoke change concerning the abuses of big business. </p>
         <ol>
           <li class="informationsources"> <b> Get Educated </b></li>
@@ -308,11 +330,13 @@
               <li class="informationsources">They are helpful towards funding campaigns which aim to “challenge abusive global corporations”. </li>
             <ul>
         </ol>
+        <div class ="information">
         <a class ="link" href="http://www.american-historama.org/1866-1881-reconstruction-era/rise-of-big-business.htm"> <img src="ms.jpg" class="link-image-square"><br> Middle Schoolers</a>
 
         <a class ="link" href="http://act.stopcorporateabuse.org/p/dia/action3/common/public/?action_KEY=20727"> <img src="stop.jpg" class="link-image-rectangle"><br> High Schoolers | Adults </a>
 
         <a class ="link" href="https://www.change.org/t/big-business-abuses-en-us"> <img src="change.gif" class="link-image-square"><br> Adults | Change.org </a> <br>
+        </div>
 
       </div>
       <div class="sources">
@@ -337,7 +361,7 @@
 
           <a class="link" href="http://www.minyanville.com/businessmarkets/articles/walmart-retail-target-abuse-employees-health/10/9/2009/id/24585?page=full"><img src="minyanville.jpg" class="link-image-square"> <br>Minyanville</a><br>
 
-        </p>
+        </div>
         <br>
       </div>
       <div class="mapcontainer">

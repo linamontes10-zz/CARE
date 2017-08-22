@@ -99,11 +99,6 @@
       to {opacity: 1}
     }
 
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-      .text {font-size: 11px}
-    }
-
     .slideshowimages {
       width:40%;
       height:40%;
@@ -171,11 +166,11 @@
     }
 
     .jumbocontainer {
-        height:100vh;
-        width:98.78vw;
-        background-image: url('./general.jpg');
-        align-items: center;     /* Align the inner div vertically */
-        justify-content: center;
+      height:100vh;
+      width:98.78vw;
+      background-image: url('./general.jpg');
+      align-items: center;     /* Align the inner div vertically */
+      justify-content: center;
     }
 
     .link {
@@ -251,13 +246,6 @@
         padding-left: 5px;
         padding-right: 5px;
       }
-    }
-
-    @media only screen and (max-width: 600px) and (min-width: 100px) {
-      #container {
-        padding-left: 5px;
-        padding-right: 5px;
-      }
       footer {
         display: none;
       }
@@ -268,6 +256,7 @@
         float:left;
         margin:15px;
       }
+      
       .informationsources {
         text-align:left;
       }
@@ -282,12 +271,50 @@
       .jumbocontainer {
         height:100vh;
         width:98.78vw;
-        background-image: url('./bb.jpg');
+        background-image: url('./general.jpg');
         align-items: center;     /* Align the inner div vertically */
         justify-content: center;
         overflow:auto;
       }
 
+      .informationinvolved {
+        text-align: left;
+      }
+
+      .information {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow:auto;
+      }
+
+      .text {font-size: 11px}
+
+      .slideshowimages {
+        width:100%;
+        height:100%;
+      }
+
+      .slideshow-container {
+        background-color:#779CAB;
+        width:100%;
+        overflow:hidden;
+        color: #011936;
+      }
+
+      .slideshowimages {
+        width:100%;
+        height:100%;
+      }
+
+      .link-image-square {
+        width:200px;
+        height:200px;
+        border-right:0px;
+        float:none;
+        margin:0px;
+        vertical-align: middle;
+      }
     }
 
     </style>
@@ -365,45 +392,47 @@
         </div>
         <h5 class="subtitles"> Ways to Get Involved: </h5>
         <hr>
-        <p style="font-family:Arial; font-size: 18px;text-align:center;">
+        <p class= "informationinvolved">
           <ol>
-            <li><b>GET INVOLVED IN POLITICS AND COMMUNITY ORGANIZING.</b> </li>
+            <li class= "informationinvolved"><b>GET INVOLVED IN POLITICS AND COMMUNITY ORGANIZING.</b> </li>
               <ul>
-                <li>Lobby elected officials. </li>
-                <li>Contact your elected officials, from the federal to local level, to make them aware of the causes and liberties you want to protect.</li>
-                <li>Run for office. </li>
-                <li>EMILY's List, which supports pro-choice women running for congress and governor, can help.</li>
-                <li>Mobilize.</li>
-                <li>Participate in or organize peaceful protests against sexism, racism, xenophobia, transphobia, homophobia. This is where social media comes in handy. A simple "anyone know of a peaceful protest in [fill in the blank] city" status should do the trick.Volunteer or intern with Take Back the Night, or participate in a local event. If there isn't one already, plan one. Get acquainted with a local Black Lives Matter chapter to find out about upcoming events.</li>
-                <li>Work with the next generation.</li>
-                <li>Volunteer at after school educational and mentoring programs like Dave Eggers' 826 -National, Big Brothers Big Sisters, or Reading Partners.</li>
-                <li>Join the ACLU.</li>
-                <li>All it takes is a donation (as much as you're able to give). Pro tip: keep that little box checked that allows the ACLU to send you emails. You'll want to stay abreast of what's going on with reproductive/civil rights in the coming months.</li>
+                <li class= "informationinvolved">Lobby elected officials. </li>
+                <li class= "informationinvolved">Contact your elected officials, from the federal to local level, to make them aware of the causes and liberties you want to protect.</li>
+                <li class= "informationinvolved">Run for office. </li>
+                <li class= "informationinvolved">EMILY's List, which supports pro-choice women running for congress and governor, can help.</li>
+                <li class= "informationinvolved">Mobilize.</li>
+                <li class= "informationinvolved">Participate in or organize peaceful protests against sexism, racism, xenophobia, transphobia, homophobia. This is where social media comes in handy. A simple "anyone know of a peaceful protest in [fill in the blank] city" status should do the trick.Volunteer or intern with Take Back the Night, or participate in a local event. If there isn't one already, plan one. Get acquainted with a local Black Lives Matter chapter to find out about upcoming events.</li>
+                <li class= "informationinvolved">Work with the next generation.</li>
+                <li class= "informationinvolved">Volunteer at after school educational and mentoring programs like Dave Eggers' 826 -National, Big Brothers Big Sisters, or Reading Partners.</li>
+                <li class= "informationinvolved">Join the ACLU.</li>
+                <li class= "informationinvolved">All it takes is a donation (as much as you're able to give). Pro tip: keep that little box checked that allows the ACLU to send you emails. You'll want to stay abreast of what's going on with reproductive/civil rights in the coming months.</li>
               </ul><br>
-            <li><b> KEEP AN EYE OUT FOR SEXISM.</b></li>
+            <li class= "informationinvolved"><b> KEEP AN EYE OUT FOR SEXISM.</b></li>
               <ul>
-                <li>Help end workplace discrimination and harassment.</li>
-                <li>Read up on workplace discrimination laws and file a Charge of Discrimination if it applies to you.</li>
-                <li>Report sexism in the media.</li>
-                <li>Contact the Women's Media Center to report problematic coverage of women in local and national media.</li>
-                STAND UP FOR MINORITIES AND OTHER PEOPLE WHO FEEL NEWLY THREATENED
-                <li>Be there for those who need you.</li>
-                <li>Tell your trans/gay/immigrant/non-white/female-identifying friends that you love them, and that they matter. Listen to them. Ask what you can do to help. Then volunteer with a local crisis hotline center to help the people who don't have friends like you.</li>
-                <li>Make bathroom access safe for all.</li>
-                <li>Contribute information to Refuge Restrooms, a web app that seeks to provide safe restroom access for who are transgender, intersex, and gender nonconforming individuals.</li>
-                <li>Assist U.S. citizenship-seekers.</li>
-                <li>Contact English or citizen preparation classes near you; many rely on volunteers to serve as tutors and create lesson plans. If you need legal assistance, or know someone who does, find a local service provider.</li>
+                <li class= "informationinvolved">Help end workplace discrimination and harassment.</li>
+                <li class= "informationinvolved">Read up on workplace discrimination laws and file a Charge of Discrimination if it applies to you.</li>
+                <li class= "informationinvolved">Report sexism in the media.</li>
+                <li class= "informationinvolved">Contact the Women's Media Center to report problematic coverage of women in local and national media.</li>
+              </ul>
+            <li class= "informationinvolved"><b>STAND UP FOR MINORITIES AND OTHER PEOPLE WHO FEEL NEWLY THREATENED </b></li>
+              <ul>
+                <li class= "informationinvolved">Be there for those who need you.</li>
+                <li class= "informationinvolved">Tell your trans/gay/immigrant/non-white/female-identifying friends that you love them, and that they matter. Listen to them. Ask what you can do to help. Then volunteer with a local crisis hotline center to help the people who don't have friends like you.</li>
+                <li class= "informationinvolved">Make bathroom access safe for all.</li>
+                <li class= "informationinvolved">Contribute information to Refuge Restrooms, a web app that seeks to provide safe restroom access for who are transgender, intersex, and gender nonconforming individuals.</li>
+                <li class= "informationinvolved">Assist U.S. citizenship-seekers.</li>
+                <li class= "informationinvolved">Contact English or citizen preparation classes near you; many rely on volunteers to serve as tutors and create lesson plans. If you need legal assistance, or know someone who does, find a local service provider.</li>
               </ul><br>
-            <li><b> GET INVOLVED IN A SPECIFIC CAUSE.</b></li>
+            <li class= "informationinvolved"><b> GET INVOLVED IN A SPECIFIC CAUSE.</b></li>
               <ul>
-                <li>Support action against climate change.</li>
-                <li>Sign the Nature Conservancy's Climate Action Pledge. Volunteer with NextGenClimate. -Become involved in activist groups (find some here) to fundraise, lobby elected officials, and organize meet-ups and rallies.</li>
-                <li>Protect America against gun violence.</li>
-                <li>Sign petitions and donate to organizations that seek to enforce responsible gun ownership laws.</li>
-                <li>Support Planned Parenthood.</li>
-                <li>Donate to or seek out volunteer opportunities with your local Planned Parenthood.</li>
-                <li>Become an abortion clinic escort. </li>
-                <li>Contact clinics in your area and volunteer to support patients and staff as they enter and exit clinics, shielding them from harassment. </li>
+                <li class= "informationinvolved">Support action against climate change.</li>
+                <li class= "informationinvolved">Sign the Nature Conservancy's Climate Action Pledge. Volunteer with NextGenClimate. -Become involved in activist groups (find some here) to fundraise, lobby elected officials, and organize meet-ups and rallies.</li>
+                <li class= "informationinvolved">Protect America against gun violence.</li>
+                <li class= "informationinvolved">Sign petitions and donate to organizations that seek to enforce responsible gun ownership laws.</li>
+                <li class= "informationinvolved">Support Planned Parenthood.</li>
+                <li class= "informationinvolved">Donate to or seek out volunteer opportunities with your local Planned Parenthood.</li>
+                <li class= "informationinvolved">Become an abortion clinic escort. </li>
+                <li class= "informationinvolved">Contact clinics in your area and volunteer to support patients and staff as they enter and exit clinics, shielding them from harassment. </li>
               </ul>
           <ol>
           <br>
@@ -416,7 +445,7 @@
         </div>
         <h5 class="subtitles"> Credible Sources: </h5>
         <hr>
-        <p style="text-align:center;" class="information">
+        <div class="information">
 
           <a class="link" href="http://www.gmhc.org/"> <img src="gmhc.jpg" class="link-image-square"><br> GMHC </a>
 
@@ -425,7 +454,8 @@
           <a class="link" href="http://blacklivesmatter.com"><img src="blm.jpg" class="link-image-square"><br>Black Lives Matter</a>
 
           <a class="link" href="http://culturesofresistance.org"><img src="cor.jpg" class="link-image-square"><br>Cultures of Resistance</a><br>
-        </p>
+
+        </div>
         <br>
       </div>
       <div class="slideshow-container">
