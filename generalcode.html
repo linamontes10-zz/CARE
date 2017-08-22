@@ -36,7 +36,7 @@
       clear: left;
       text-align: center;
     }
-            
+
     div.footercontainer {
       width: 100%;
       height:100%;
@@ -162,11 +162,36 @@
       margin:15px;
     }
 
-    .smallpics {
-      float:left;
-    }
+    @media only screen and (max-width: 600px) and (min-width: 400px)  {
+      #container {
+        padding-left:10px;
+        padding-right:10px;
+      }
+        #care {
+          min-width: none;
+          min-height: none;
+          max-width: none;
+          max-height: none;
+          height: 50px;
+          width: 110px
 
-    </style> 
+        }
+        .footersmall1 {
+          width: 70%;
+          height: 17.5%;
+          float:left;
+          margin:15px;
+        }
+
+        .footersmall2 {
+          width: 73%;
+          height: 17.5%;
+          float:left;
+          margin:15px;
+        }
+  }
+
+    </style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -222,7 +247,7 @@
       </div>
 
     </div>
-    
+
     <div id="container">
     <br>
       <div class="description">
@@ -312,10 +337,10 @@
         <img src="Care.PNG" id="care">
       </div>
       <div id="footercontainerright">
-        <div class="smallpics">
+        <div class="smallpics footersmall1">
           <img src="GWC_.PNG" class="footersmall1">
         </div>
-        <div class="smallpics">
+        <div class="smallpics footersmall2">
           <img src="Adobe.PNG" class="footersmall2">
         </div>
       </div>
