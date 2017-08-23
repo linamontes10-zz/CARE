@@ -101,38 +101,38 @@
     }
 
     #lea {
-        color:#042A2B;
-        font-family: 'Arial';
-        font-size: 18px;
-        text-align:justify;
-        color:#B73548;
-        border: solid 2px #EF7674;
-        padding-left:10px;
-        padding-right:10px;
-        margin-bottom: 10px;
+      color:#042A2B;
+      font-family: 'Arial';
+      font-size: 18px;
+      text-align:justify;
+      color:#B73548;
+      border: solid 2px #EF7674;
+      padding-left:10px;
+      padding-right:10px;
+      margin-bottom: 10px;
     }
 
     #savannah {
-        color:#042A2B;
-        font-family: 'Arial';
-        font-size: 18px;
-        text-align:justify;
-        color:#B73548;
-        border: solid 2px #EF7674;
-        padding-left:10px;
-        padding-right:10px;
+      color:#042A2B;
+      font-family: 'Arial';
+      font-size: 18px;
+      text-align:justify;
+      color:#B73548;
+      border: solid 2px #EF7674;
+      padding-left:10px;
+      padding-right:10px;
     }
 
     #faith {
-        color:#042A2B;
-        font-family: 'Arial';
-        font-size: 18px;
-        text-align:justify;
-        color:#B73548;
-        border: solid 2px #EF7674;
-        padding-left:10px;
-        padding-right:10px;
-        margin-bottom: 10px;
+      color:#042A2B;
+      font-family: 'Arial';
+      font-size: 18px;
+      text-align:justify;
+      color:#B73548;
+      border: solid 2px #EF7674;
+      padding-left:10px;
+      padding-right:10px;
+      margin-bottom: 10px;
     }
 
     #care {
@@ -199,6 +199,29 @@
       color:#B73548;
     }
 
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
     /* Caption text */
     .text {
       color:white;
@@ -221,26 +244,26 @@
 
     /* The dots/bullets/indicators */
     .dot {
+      cursor:pointer;
       height: 13px;
       width: 13px;
       margin: 0 2px;
       background-color: #bbb;
       border-radius: 50%;
       display: inline-block;
-      transition: background-color 0.5s ease;
-      visibility: hidden;
+      transition: background-color 0.6s ease;
     }
 
-    .active {
+    .active, .dot:hover {
       background-color: #717171;
     }
 
     /* Fading animation */
     .fade {
       -webkit-animation-name: fade;
-      -webkit-animation-duration: 10.5s;
+      -webkit-animation-duration: 100000000000005s;
       animation-name: fade;
-      animation-duration: 10.5s;
+      animation-duration: 100000000000005s;
     }
 
 	.column {
@@ -632,28 +655,28 @@
             <img src="IMG_0160.JPG" class="slideshowimages">
             <div class="text"><b>Girls Who Code Adobe Class of 2017</div>
           </div>
+
           <br>
 
         </div>
 
         <div style="text-align:center">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+          <span class="dot" onclick="currentSlide(12)"></span>
+          <span class="dot" onclick="currentSlide(13)"></span>
+          <span class="dot" onclick="currentSlide(14)"></span>
+          <span class="dot" onclick="currentSlide(15)"></span>
         </div>
-    </div>
     <hr>
     <footer>
     <div class="footercontainer">
@@ -678,24 +701,32 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-      var slideIndex = 0;
-      showSlides();
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-      function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex> slides.length) {slideIndex = 1}
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 3000); // Change image every 2 seconds
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
       }
     </script>
     <script>window.jQuery || document.write('<script src="./bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
