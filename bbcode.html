@@ -168,12 +168,6 @@
     .smallpics {
       float:left;
     }
-    @media only screen and (max-width: 600px) and (min-width: 400px)  {
-      #container {
-        padding-left:10px;
-        padding-right:10px;
-      }
-    }
 
     @media only screen and (max-width: 600px) and (min-width: 100px) {
       #container {
@@ -227,6 +221,15 @@
       .link-image-rectangle {
         width:150px;
         height:65px;
+        border-right:0px;
+        float:none;
+        margin:0px;
+        vertical-align: middle;
+      }
+
+      .link-image {
+        width:200px;
+        height:150px;
         border-right:0px;
         float:none;
         margin:0px;
@@ -347,7 +350,7 @@
         <h5 class="subtitles"> Credible Sources: </h5>
         <h6 style="font-family: 'Arial';font-size: 19px;text-align:center;"><i>  Clicking on each image will redirect you to their page </i> </h6>
         <hr>
-        <p style="text-align:center;color:white;font-size:18px;">
+        <div class="information">
 
           <a class="link" href="http://www.globalresearch.ca/the-powers-and-abuses-of-americas-mega-corporations/5371901"> <img src="global-research.png" class="link-image-square"><br> Global Research Centre</a>
 
@@ -361,10 +364,11 @@
 
           <a class="link" href="https://www.stopcorporateabuse.org/"> <img src="stop.jpg" class="link-image-rectangle"><br>Corporate Accountability International</a>
 
-          <a class="link" href="http://www.minyanville.com/businessmarkets/articles/walmart-retail-target-abuse-employees-health/10/9/2009/id/24585?page=full"><img src="minyanville.jpg" class="link-image-square"> <br>Minyanville</a><br>
+          <a class="link" href="http://www.minyanville.com/businessmarkets/articles/walmart-retail-target-abuse-employees-health/10/9/2009/id/24585?page=full"><img src="minyanville.jpg" class="link-image-square"><br>Minyanville</a><br>
 
         </div>
         <br>
+      </div>
       <div class="mapcontainer">
         <div style="line-height:70%;">
           <br>
@@ -375,7 +379,7 @@
         <br>
       </div>
     </div>
-      <hr>
+    <hr>
     <footer>
     <div class="footercontainer">
       <div id="footercontainerleft">
